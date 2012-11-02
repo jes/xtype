@@ -4,4 +4,6 @@
 
 use X11::GUITest qw(SendKeys);
 
+@ARGV or die "Usage: xtype Hello, world!\nxtype simulates typing in X\n";
+
 SendKeys(join(' ', @ARGV));
