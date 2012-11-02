@@ -1,0 +1,12 @@
+  xtype - tool to type characters into X
+  --------------------------------------
+
+xtype is used to send simulated typing to X applications.
+
+xtype takes no arguments and gives no output.
+
+Usage: xtype Hello, world!
+
+This will cause the key events for "Hello, world!" to be generated.
+
+Personally I use this via a keybinding in my window manager so that I don't have to type things like "sudo yum clean metadata" in full every time. A shell alias would of course be possible, but I have to type this on so many machines that it is easier to use a keybinding than to keep my bashrc up to date.

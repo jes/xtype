@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+# xtype - simulate typing in X
+# James Stanley 2012
+
+use X11::GUITest qw(SendKeys);
+
+SendKeys(join(' ', @ARGV));
