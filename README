@@ -3,7 +3,8 @@
 
 xtype is used to send simulated typing to X applications.
 
-xtype takes no arguments and gives no output.
+xtype takes no input and gives no output. The arguments are the keys
+to type. Separate arguments are broken up with spaces.
 
 Usage: xtype Hello, world!
 
