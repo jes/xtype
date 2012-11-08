@@ -2,8 +2,10 @@
 # xtype - simulate typing in X
 # James Stanley 2012
 
-use X11::GUITest qw(SendKeys);
+use X11::GUITest qw(SendKeys SetEventSendDelay);
 
 @ARGV or die "Usage: xtype Hello, world!\nxtype simulates typing in X\n";
 
+# NOTE: docs say setting this to 0 is bad; I have observed no ill effects
+SetEventSendDelay(0);
 SendKeys(join(' ', @ARGV));
